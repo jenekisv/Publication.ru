@@ -1,0 +1,32 @@
+#order - порядок;
+#deny - запретить;
+#allow - разрешить.
+
+#Запрет для ip:
+#Order deny,allow
+#Deny from 123.123.123
+
+#Разрешение для ip:
+#Order deny,allow
+#Allow from 123.123.123.123
+
+#Чтобы не выводить в подвал ни какую инфу с сервера
+#рекламма например.
+ServerSignature Off
+
+#Принудительное задание кодировки.
+AddDefaultCharset UTF-8 
+
+#Отмена кодировки сервером.
+#CharsetDisable On
+
+#Убираем расширение у файла в адресной строке.
+#RewriteRule ^reg?$ reg.php [NC, L]
+
+#Создание собственных страниц с сообщениями об ошибках.
+ErrorDocument 404 http://publication.ru/error.php
+
+#Разрешение для всех ip:
+Order deny,allow
+allow from all
+

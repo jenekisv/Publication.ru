@@ -1,0 +1,13 @@
+*{
+    padding: 0; margin: 0;
+}
+.container {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background-color: #f8f8f8;
+}
+
+#errorBlock {
+	display: none;
+}
